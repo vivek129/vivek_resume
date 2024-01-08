@@ -1,27 +1,62 @@
-# Chennupati Vivek's Resume
+# Chennupati Vivek
 
-This repository contains my professional resume developed using LaTeX, showcasing my educational background, work experiences, skills, projects, certifications, and technical expertise.
+Gajularamaram, Hyderabad, Telangana-500055  
+📞 9642175872  
+✉️ [vivekchennupati126@gmail.com](mailto:vivekchennupati126@gmail.com)  
+🔗 [linkedin.com/in/vivekchennupati](https://www.linkedin.com/in/vivekchennupati/)
 
-## About Me
+---
 
-- **Name:** Chennupati Vivek
-- **Location:** Gajularamaram, Hyderabad, Telangana-500055
-- **Email:** vivekchennupati126@gmail.com
-- **LinkedIn:** [linkedin.com/in/vivekchennupati](https://www.linkedin.com/in/vivekchennupati/)
-- **Phone:** +91 9642175872
+## Education
+- **B.Tech in Information Technology**  
+  MLR Institute of Technology, Hyderabad, Telangana  
+  (2020-2023)  
+  CGPA: 7.2/10
 
-## Resume Details
+- **Diploma in Mechanical Engineering**  
+  St. Peter's Engineering College, Hyderabad, Telangana  
+  (2017-2020)  
+  Percentage: 75.4%
 
-- **Education:** B.Tech in Information Technology from MLR Institute of Technology, Hyderabad, Telangana (CGPA: 7.2/10)
-- **Experience:** Freelance Django Developer at Tierra Agrotech Limited
-- **Skills:** Proficient in Python, Java, Django, ReactJs, MySQL, Git & GitHub, Nginx, AWS CICD pipeline, WordPress, Elementor, and more.
-- **Projects:** IoT-Based Home Automation System, Dynamic Website Generator from Resume Upload, Farmhouse Showcase Website, and more.
-- **Certifications:** Full Stack Development, Introduction to Git and GitHub, Introduction to Python.
+- **10th Grade (SSC)**  
+  St. Alphonsa’s High School, Hyderabad, Telangana  
+  CGPA: 8.5/10
 
-## How to Use
+## Experience
+- **Django Developer** at Tierra Agrotech Limited  
+  (July 2023 - Present)  
+  - Developed a Django-based e-commerce platform enabling online presence.
+  - Implemented user authentication, shop, secure payments, and dynamic billing.
+  - Created an efficient admin panel for order tracking and inventory management.
+  - Managed code versioning using GitHub and established CI/CD for deployment.
+  - Responsible for site content management and ongoing maintenance.
+  - [Website: mekisan.in](https://mekisan.in)
 
-1. **Clone or Download:** Clone the repository or download the ZIP file.
-2. **Compile LaTeX Resume:** Use a LaTeX editor or compiler to open and compile the `resume.tex` file.
-3. **Review Resume:** Access the generated PDF file to explore my detailed resume.
+## Projects
+- **Dynamic Website Generator from Resume Upload**
+  - Django, HTML/CSS, JavaScript, AWS (Jan 2023)
+  - Developed a Django-based project enabling users to upload resumes for automated extraction of details.
+  - Implemented a resume parser to dynamically generate a website with extracted information.
 
-Feel free to browse my resume and reach out for any inquiries or collaboration opportunities!
+- **IoT-Based Home Automation System**
+  - Arduino, IoT, Web Development (Aug 2022)
+  - Created a remote home automation setup using Arduino and IoT technologies.
+  - Developed a user-friendly web app for device control and notifications.
+
+- **Farmhouse Showcase Website**
+  - WordPress, Elementor (Nov 2023)
+  - Developed a detailed website for a farmhouse using WordPress and Elementor.
+  - Showcased farmhouse details, amenities, and booking information.
+
+## Technical Skills
+- **Programming Languages**: Python, Java
+- **Web Frameworks**: Django, ReactJs
+- **Database Management**: MySQL, SQLite
+- **Development Tools**: Git & Github, Nginx, AWS CICD pipeline
+- **Content Management Systems**: Wordpress, Elementor
+- **Other Skills**: Payment Gateway Integration, Django RestAPI, Django ORM, SDLC Familiarity
+
+## Courses and Certificates
+- Full Stack Development (Coursera) - Duration: 3 Months
+- Introduction to Git and GitHub (Google) - Duration: 1 Month
+- Introduction to Python (Coding Ninjas) - Duration: 2 Months
