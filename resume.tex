@@ -1,0 +1,218 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% serif
+\usepackage{CormorantGaramond}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Chennupati Vivek} \\ \vspace{1pt}
+ Gajularamaram,Hyderabad, Telangana-500055 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 9642175872 ~ \href{mailto:vivekchennupati126@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vivekchennupati126@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/vivekchennupati/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/vivekchennupati}}  ~
+    \vspace{-6pt}
+\end{center}
+
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {B.Tech in Information Technology}{2020-2023}
+      {MLR Institute of Technology, Hyderabad, Telangana}{CGPA: 7.2/10}
+    \resumeSubheading
+      {Diploma in Mechanical Engineering}{2017-2020}
+      {St. Peter's Engineering College, Hyderabad, Telangana}{Percentage: 75.4 \%}
+    \resumeSubheading
+      {10th Grade (SSC)}{March 2017}
+      {St. Alphonsa’s High School, Hyderabad, Telangana}{CGPA: 8.5/10}
+  \resumeSubHeadingListEnd
+
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Tierra Agrotech Limited}{{July 2023 - Present}}
+      {Django Developer}{Hyderabad}
+      \resumeItemListStart
+        \resumeItem{Developed full-stack development of a Django-based e-commerce platform with user authentication and enabling Tierra Agrotech Limited to establish an online presence}
+        \resumeItem{Delivered seamless user experiences: shop, secure payments, dynamic billing, interactive blogs.}
+        \resumeItem{Created an efficient admin panel for order tracking, inventory, stats, and invoicing.}
+        \resumeItem{Utilized Django backend with HTML, CSS, JS, and Bootstrap for the frontend.}
+        \resumeItem{Managed code versioning using GitHub and established CI/CD for deployment.}
+        \resumeItem{Responsible for site content management, including banners, coupon codes, and other promotional materials.}
+        \resumeItem{Handled ongoing site maintenance and updates to ensure optimal performance.}
+        \resumeItem{
+        Website :  \underline{\href{https://mekisan.in}{mekisan.in}}
+        }
+      
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Dynamic Website Generator from Resume Upload} $|$ \emph{ Django, HTML/CSS, JavaScript, AWS}}{Jan 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a Django-based project enabling users to upload resumes for automated extraction of details.}
+            \resumeItem{Implemented a resume parser to extract user details and dynamically generate a website with the parsed information.}
+            \resumeItem{Utilized Django's functionalities to process resumes and dynamically create web content based on extracted details.}
+            \resumeItem{Enhanced user experience by automating the process of creating personalized websites from uploaded resumes.}
+          \resumeItemListEnd
+           \vspace{-16pt}
+
+
+\resumeProjectHeading
+    {\textbf{IoT-Based Home Automation System} $|$ \emph{Arduino, IoT, Web Development}}{Aug 2022}
+    \resumeItemListStart
+        \resumeItem{Created a remote home automation setup using Arduino and IoT technologies.}
+        \resumeItem{Utilized sensors and Arduino for device internet connectivity and communication.}
+        \resumeItem{Implemented secure communication via Blink server for reliable data transfer.}
+        \resumeItem{Developed a user-friendly web app for device control and notifications.}
+        \resumeItem{Resulted in efficient device management, saving time and energy for users.}
+    \resumeItemListEnd
+\vspace{-16pt}
+
+    
+\resumeProjectHeading
+    {\textbf{Farmhouse Showcase Website} $|$ \emph{WordPress, Elementor}}{Nov-2023}
+    \resumeItemListStart
+        \resumeItem{Developed a detailed website for a farmhouse using WordPress and Elementor.}
+        \resumeItem{Showcased farmhouse details, amenities, and booking information for visitors.}
+        \resumeItem{Ensured a user-friendly interface and smooth navigation for easy access to information.}
+        \resumeItem{Created a platform to effectively promote and attract potential visitors to the farmhouse.}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+      \item{
+        \textbf{Programming Languages}{: Python, Java} \\
+        \textbf{Web Frameworks}{: Django, ReactJs} \\
+        \textbf{Database Management}{: MySQL, SQLite} \\
+        \textbf{Development Tools}{: Git \& Github, Nginx, AWS CICD pipeline} \\
+        \textbf{Content Management Systems}{: Wordpress, Elemontoe} \\
+        \textbf{Other Skills}{: Payment Gateway Integration, Django RestAPI, Django ORM and SDLC Familiarity} \\
+      }
+    }
+ \end{itemize}
+ \vspace{-16pt}
+
+\section{Courses and Certificates}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Full Stack Development}{Coursera}
+            {Duration: (3 Months)}{}
+        \resumeSubheading
+            {Introduction to Git and GitHub}{Google}
+            {Duration: (1 Month)}{}
+        \resumeSubheading
+            {Introduction to Python}{Coding Ninjas}
+            {Duration: (2 Months)}{}
+    \resumeSubHeadingListEnd
+\end{document}
