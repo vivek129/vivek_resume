@@ -23,7 +23,7 @@ Gajularamaram, Hyderabad, Telangana-500055
   CGPA: 8.5/10
 
 ## Experience
-- **Django Developer** at Tierra Agrotech Limited  
+- **Full Stack Developer** at Tierra Agrotech Limited  
   (July 2023 - Present)  
   - Developed a Django-based e-commerce platform enabling online presence.
   - Implemented user authentication, shop, secure payments, and dynamic billing.
