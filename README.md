@@ -44,7 +44,7 @@ Gajularamaram, Hyderabad, Telangana-500055
   - Developed a user-friendly web app for device control and notifications.
 
 - **Farmhouse Showcase Website**
-  - WordPress, Elementor (Nov 2023)
+  - WordPress, Elementor (DEC 2023)
   - Developed a detailed website for a farmhouse using WordPress and Elementor.
   - Showcased farmhouse details, amenities, and booking information.
 
