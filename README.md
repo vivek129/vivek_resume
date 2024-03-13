@@ -56,7 +56,12 @@ Gajularamaram, Hyderabad, Telangana-500055
 - **Content Management Systems**: Wordpress, Elementor
 - **Other Skills**: Payment Gateway Integration, Django RestAPI, Django ORM, SDLC Familiarity
 
-## Courses and Certificates
-- Full Stack Development (Coursera) - Duration: 3 Months
-- Introduction to Git and GitHub (Google) - Duration: 1 Month
-- Introduction to Python (Coding Ninjas) - Duration: 2 Months
+## Currently exploring:
+
+- **Advanced NLP Techniques:** Fine-tuning LLMs, text summarization, etc.
+- **Serverless Architectures:** AWS Lambda, Google Cloud Functions
+- **Conversational AI Development:**  Building more sophisticated chatbots.
+
+## Collaborate & Connect
+
+If you have exciting projects in mind or just want to chat about technology, feel free to reach out! 
