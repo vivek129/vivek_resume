@@ -14,7 +14,16 @@
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
+\usepackage{hyperref} % Add hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
 \input{glyphtounicode}
+\usepackage{xcolor}
+\color{black} % Add this line to set the text color
 
 
 %----------FONT OPTIONS----------
@@ -101,14 +110,27 @@
 \begin{document}
 
 \begin{center}
-    {\Huge \scshape Chennupati Vivek} \\ \vspace{1pt}
- Gajularamaram,Hyderabad, Telangana-500055 \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 9642175872 ~ \href{mailto:vivekchennupati126@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vivekchennupati126@gmail.com}} ~ 
+    {\Huge \scshape Vivek Chennupati} \\ \vspace{1pt}
+    \small 
+    \href{tel:9642175872}{\raisebox{-0.1\height}\faPhone\ 9642175872} ~ \href{mailto:vivekchennupati126@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{vivekchennupati126@gmail.com}} ~ 
     \href{https://www.linkedin.com/in/vivekchennupati/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/vivekchennupati}}  ~
     \vspace{-6pt}
 \end{center}
 
 
+
+% \section{Summary of Qualifications}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{
+%       \item{
+%         Results-driven Full Stack Developer with expertise in Django, Python, and JavaScript.
+%       }
+%       \item{
+%         Proven track record of developing dynamic e-commerce platforms, improving user experiences, and implementing effective CI/CD pipelines.
+%       }
+%     }
+%  \end{itemize}
+%  \vspace{-16pt}
 
 \section{Education}
   \resumeSubHeadingListStart
@@ -128,26 +150,22 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-  \resumeSubheading
-      {Tierra Agrotech Limited}{{July 2023 - Present}}
-      {Django Developer}{Hyderabad}
-      \resumeItemListStart
-        \resumeItem{Developed full-stack development of a Django-based e-commerce platform with user authentication and enabling Tierra Agrotech Limited to establish an online presence}
-        \resumeItem{Delivered seamless user experiences: shop, secure payments, dynamic billing, interactive blogs.}
-        \resumeItem{Created an efficient admin panel for order tracking, inventory, stats, and invoicing.}
-        \resumeItem{Utilized Django backend with HTML, CSS, JS, and Bootstrap for the frontend.}
-        \resumeItem{Managed code versioning using GitHub and established CI/CD for deployment.}
-        \resumeItem{Responsible for site content management, including banners, coupon codes, and other promotional materials.}
-        \resumeItem{Handled ongoing site maintenance and updates to ensure optimal performance.}
-        \resumeItem{
-        Website :  \underline{\href{https://mekisan.in}{mekisan.in}}
-        }
-      
-      \resumeItemListEnd
-
+\resumeSubheading
+    {Tierra Agrotech Limited}{{July 2023 - Present}}
+    {Web Developer}{Hyderabad}
+    \resumeItemListStart
+      \resumeItem{Developed a Django-based e-commerce platform with features like a payment system that sends automatic invoices via email, ensuring a seamless checkout process.}
+      \resumeItem{Built an efficient admin panel for managing products, blogs, and other e-commerce operations.}
+      \resumeItem{Implemented coupon codes, promotional email systems, and integrated Google Merchant for enhanced marketing and sales operations.}
+      \resumeItem{Utilized Django backend with HTML, CSS, JS, and Bootstrap for the frontend, ensuring a modern and responsive user interface.}
+      \resumeItem{Handled site content management, inventory tracking, and real-time order management, keeping the site running smoothly.}
+      \resumeItem{Managed code versioning using GitHub and established CI/CD for deployment, ensuring continuous integration and smooth deployment cycles.}
+      \resumeItem{Oversaw ongoing site maintenance, including performance optimization, bug fixes, and feature updates.}
+      \resumeItem{
+      Website :  \underline{\href{https://mekisan.in}{mekisan.in}}
+      }
+    \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-
 
 
 \section{Projects}
@@ -177,14 +195,13 @@
 
     
 \resumeProjectHeading
-    {\textbf{Farmhouse Showcase Website} $|$ \emph{WordPress, Elementor}}{Nov-2023}
+    {\textbf{Manju Farmhouse Website} $|$ \emph{Django, HTML/CSS, JavaScript}}{May-2024}
     \resumeItemListStart
-        \resumeItem{Developed a detailed website for a farmhouse using WordPress and Elementor.}
-        \resumeItem{Showcased farmhouse details, amenities, and booking information for visitors.}
-        \resumeItem{Ensured a user-friendly interface and smooth navigation for easy access to information.}
-        \resumeItem{Created a platform to effectively promote and attract potential visitors to the farmhouse.}
+        \resumeItem{Developed a dynamic website for a farmhouse using Django, featuring detailed property information and booking options.}
+        \resumeItem{Showcased amenities and events with a user-friendly interface and seamless navigation.}
+        \resumeItem{Built a custom admin panel for easy updates to content, galleries, and bookings.}
+        \resumeItem{Created a platform to effectively promote the farmhouse and attract potential visitors.}
     \resumeItemListEnd
-
     \resumeSubHeadingListEnd
 
 
@@ -192,16 +209,17 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{
       \item{
-        \textbf{Programming Languages}{: Python, Java} \\
+        \textbf{Languages}{: Python, Java} \\
         \textbf{Web Frameworks}{: Django, ReactJs} \\
-        \textbf{Database Management}{: MySQL, SQLite} \\
+        \textbf{Databases}{: MySQL, SQLite} \\
         \textbf{Development Tools}{: Git \& Github, Nginx, AWS CICD pipeline} \\
-        \textbf{Content Management Systems}{: Wordpress, Elemontoe} \\
-        \textbf{Other Skills}{: Payment Gateway Integration, Django RestAPI, Django ORM and SDLC Familiarity} \\
+        \textbf{Content Management Systems}{: Wordpress, Elementor} \\
+        \textbf{Other Skills}{: Payment Gateway Integration, Django RestAPI, Django ORM} \\
       }
     }
  \end{itemize}
  \vspace{-16pt}
+
 
 \section{Courses and Certificates}
     \resumeSubHeadingListStart
