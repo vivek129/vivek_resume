@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,34 +6,45 @@
     <title>Vivek Chennupati - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         body {
             background-color: #121212;
             color: #e0e0e0;
         }
         .navbar {
-            background-color: #1e1e1e !important;
+            background-color: rgba(30, 30, 30, 0.8) !important;
+            backdrop-filter: blur(10px);
         }
         .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
             color: #e0e0e0;
+            transition: color 0.3s ease;
         }
         .navbar-light .navbar-nav .nav-link:hover {
             color: #bb86fc;
         }
         .bg-primary {
-            background-color: #3700b3 !important;
+            background: linear-gradient(135deg, #3700b3, #6200ee) !important;
         }
         .btn-primary {
             background-color: #bb86fc;
             border-color: #bb86fc;
+            transition: all 0.3s ease;
         }
         .btn-primary:hover {
             background-color: #3700b3;
             border-color: #3700b3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(187, 134, 252, 0.3);
         }
         .card {
             background-color: #1e1e1e;
             border-color: #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(187, 134, 252, 0.2);
         }
         .text-muted {
             color: #bb86fc !important;
@@ -43,6 +53,10 @@
             background-color: #1e1e1e;
             color: #e0e0e0;
             border-color: #333;
+            transition: background-color 0.3s ease;
+        }
+        .list-group-item:hover {
+            background-color: #2e2e2e;
         }
         footer {
             background-color: #1e1e1e !important;
@@ -61,11 +75,25 @@
             border-radius: 15px;
             display: inline-block;
             margin: 2px;
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            background-color: #bb86fc;
+            transform: scale(1.05);
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .animate-on-scroll.show {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Vivek Chennupati</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -83,9 +111,9 @@
         </div>
     </nav>
 
-    <header class="bg-primary text-white text-center py-5">
+    <header class="bg-primary text-white text-center py-5 animate__animated animate__fadeIn">
         <div class="container">
-            <h1 class="display-4">Vivek Chennupati</h1>
+            <h1 class=" pt-5 display-4 fw-bold">Vivek Chennupati</h1>
             <p class="lead">Web Developer</p>
             <p>
                 <i class="bi bi-telephone"></i> 9642175872 |
@@ -96,55 +124,65 @@
     </header>
 
     <main class="container my-5">
-        <section id="about" class="mb-5">
+        <section id="about" class="mb-5 animate-on-scroll">
             <h2 class="section-title">About Me</h2>
-            <p>Passionate web developer with experience in Django and front-end technologies. Skilled in creating e-commerce platforms and implementing efficient admin panels. Committed to continuous learning and delivering high-quality web solutions.</p>
+            <p class="lead">I am a dedicated web developer with a strong focus on building scalable and efficient web solutions using Django and modern front-end technologies. With hands-on experience in developing e-commerce platforms, I specialize in creating seamless user experiences and robust backend systems. My expertise spans across full-stack development, from integrating payment gateways and automating workflows to optimizing server deployment through CI/CD pipelines.
+                </p>
+                <p> Driven by curiosity and a commitment to continuous improvement, I enjoy solving complex problems and staying updated with the latest trends in web development. I have successfully led projects that enhance business efficiency, such as creating dynamic websites, managing admin panels, and implementing IoT-based automation. With a background in both information technology and mechanical engineering, I bring a unique perspective to every project I undertake.</p>
         </section>
 
-        <section id="experience" class="mb-5">
+        <section id="experience" class="mb-5 animate-on-scroll">
             <h2 class="section-title">Experience</h2>
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Web Developer</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Tierra Agrotech Limited, Hyderabad | July 2023 - Present</h6>
-                    <ul>
-                        <li>Developed a Django-based e-commerce platform with features like a payment system and automatic invoice emails.</li>
-                        <li>Built an efficient admin panel for managing products, blogs, and other e-commerce operations.</li>
-                        <li>Implemented coupon codes, promotional email systems, and integrated Google Merchant.</li>
-                        <li>Utilized Django backend with HTML, CSS, JS, and Bootstrap for the frontend.</li>
-                        <li>Managed code versioning using GitHub and established CI/CD for deployment.</li>
-                        <li>Website: mekisan.in</li>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Developed a Django-based e-commerce platform with features like a payment system and automatic invoice emails.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Built an efficient admin panel for managing products, blogs, and other e-commerce operations.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Implemented coupon codes, promotional email systems, and integrated Google Merchant.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Utilized Django backend with HTML, CSS, JS, and Bootstrap for the frontend.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Managed code versioning using GitHub and established CI/CD for deployment.</li>
+                        <li><i class="bi bi-link-45deg text-info me-2"></i>Website: <a href="https://mekisan.in" target="_blank">mekisan.in</a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="education" class="mb-5">
+        <section id="education" class="mb-5 animate-on-scroll">
             <h2 class="section-title">Education</h2>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">B.Tech in Information Technology</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">MLR Institute of Technology, Hyderabad | 2020-2023</h6>
-                    <p class="card-text">CGPA: 7.2/10</p>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">B.Tech in Information Technology</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">MLR Institute of Technology, Hyderabad | 2020-2023</h6>
+                            <p class="card-text">CGPA: 7.2/10</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Diploma in Mechanical Engineering</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">St. Peter's Engineering College, Hyderabad | 2017-2020</h6>
-                    <p class="card-text">Percentage: 75.4%</p>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Diploma in Mechanical Engineering</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">St. Peter's Engineering College, Hyderabad | 2017-2020</h6>
+                            <p class="card-text">Percentage: 75.4%</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">10th Grade (SSC)</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">St. Alphonsa's High School, Hyderabad | March 2017</h6>
-                    <p class="card-text">CGPA: 8.5/10</p>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">10th Grade (SSC)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">St. Alphonsa's High School, Hyderabad | March 2017</h6>
+                            <p class="card-text">CGPA: 8.5/10</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="mb-5">
+        <section id="projects" class="mb-5 animate-on-scroll">
             <h2 class="section-title">Projects</h2>
             <div class="row">
                 <div class="col-md-4 mb-3">
@@ -177,7 +215,7 @@
             </div>
         </section>
 
-        <section id="skills" class="mb-5">
+        <section id="skills" class="mb-5 animate-on-scroll">
             <h2 class="section-title">Technical Skills</h2>
             <div class="row">
                 <div class="col-md-3 mb-3">
@@ -217,7 +255,7 @@
             </div>
         </section>
 
-        <section id="courses" class="mb-5">
+        <section id="courses" class="mb-5 animate-on-scroll">
             <h2 class="section-title">Courses and Certificates</h2>
             <ul class="list-group">
                 <li class="list-group-item">Full Stack Development (Coursera, 3 Months)</li>
@@ -234,5 +272,46 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animate elements on scroll
+        function animateOnScroll() {
+            var elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(function(element) {
+                if (isElementInViewport(element)) {
+                    element.classList.add('show');
+                }
+            });
+        }
+
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.navbar-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - document.querySelector('.navbar').offsetHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
